@@ -6,20 +6,21 @@ Python-based software for transcribing and analyzing YouTube podcasts and interv
 
 #Video Analyzer
 
-Este projeto tem como objetivo analisar vídeos (principalmente entrevistas e podcasts), transcrevê-los e extrair os principais insights. O foco inicial é em vídeos MP4, com transcrição para rascunho e identificação precisa de perguntas e respostas, além da extração de ideias principais e tópicos por pergunta. A interface será uma GUI simples e os relatórios serão em texto.
+Este projeto tem como objetivo analisar vídeos do Youtube(principalmente entrevistas e podcasts), transcrevê-los e extrair os principais insights. O foco inicial é com transcrição para rascunho e a melhor identificação possível de perguntas e respostas, além da extração das principais ideias e tópicos por pergunta. A interface será uma GUI simples e os relatórios serão em texto.
 
 ## Estrutura do Projeto
 
 ```
 video_analyzer/
 ├── data/                 #Para armazenar vídeos de entrada e outros dados
-├── src/                  
+├── src/                  #Código fonte 
 │   ├── __init__.py
 │   ├── transcription.py  #Módulo para transcrição de áudio/vídeo
 │   ├── nlp_analysis.py   #Módulo para análise de NLP e extração de insights
-│   └── gui.py            #Módulo para a interface gráfica
+│   ├── gui.py            #Módulo para a interface gráfica
+│   └── downloader.py     #Para baixar vídeos de URLs (ex: YouTube)
 ├── requirements.txt      #Dependências do projeto
-├── .gitignore            
+├── .gitignore            #Arquivos e pastas a serem ignorados pelo Git
 └── README.md             #Este arquivo
 ```
 
